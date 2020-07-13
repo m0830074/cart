@@ -2,7 +2,7 @@ language: python
 
 addons:
   sonarcloud:
-    organization: "aimerfan"
+    organization: "m0830074"
     token:
       secure: $SC_TOKEN
 
