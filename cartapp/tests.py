@@ -23,3 +23,8 @@ class FormTestCase(TestCase):
         c = self.client
         resp = c.post('/cartok/', {'CustomerName':'123','CustomerPhone':'123','CustomerAddress':'123','CustomerEmail':'1584.dwsqad@com.tw'})
         self.assertEqual(resp.status_code, 200)
+
+    def test_email_4(self):
+        c = self.client
+        resp = c.post('/cartok/', {'CustomerName':'123','CustomerPhone':'123','CustomerAddress':'123','CustomerEmail':'1.dwsqad@com.tw'})
+        self.assertEqual(resp.status_code, 200)
