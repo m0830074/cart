@@ -106,6 +106,7 @@ def cartok(request):  #按確認購買鈕
 	except ValidationError as e:
 		message = 'email格式不符'
 		return redirect('/cartorder/')
+		
 	try:
 		validate_email(customemail)
 	except ValidationError as e:
